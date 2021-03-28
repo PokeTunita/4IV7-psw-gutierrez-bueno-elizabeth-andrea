@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@keyframes animacion_test{
+    from{
+        background-color: rgb(212, 0, 255);
+    }
+    to{
+        background-color: rgb(27, 0, 63);
+    }
+}
+  div.twitch{
+    width: 50%;
+    background-color: rgb(27, 0, 63);
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    animation-name: animacion_test;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  div.twitch img.icono{
+    width: 40%;
+    height: 40%;
+  }
+  @supports(object-fit: cover){
+      div.twitch img{
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+      }
+  }
+  article.columna{
+    display: inline-block;
+    width: 45%;
+    height: 45%;
+    padding: 0px;
+}
